@@ -10,22 +10,23 @@
 <header class="main-header">
 
     <nav class="main-navigation">    
-            <a href="main-logo">
+            <a href="index.html">
                 <img src="img/logo.svg" width="164" height="36" alt="Логотип компании Device">
             </a>
 
                 <ul class="site-search">
-                    <form> 
-                        <label for id="leps">
-                        <img src="img/search.svg" width="16" height="16">
-                        <input id="leps" type="search" value="Поиск по сайту">
+                    <form class="search-form" action="https://echo.htmlacademy.ru" method="POST"> 
+                        <label class="visually-hidden" name="leps">Поиск по сайту</label>
+                        <button type="button" id="leps">Поиск</button>
+                        <input type="search" id="leps" name="leps" placeholder="Поиск по сайту">
                     </form>
                 </ul>
 
                 <ul class="user-navigation">
                     <li><a href="personal-area.html">
                         <img src="img/user.svg" width="13" height="12">Валентин Петухов</a></li>
-                    <li class="user-exit"><a href="Exit.html">Выйти</a></li>
+                    <li class="user-exit">
+                        <button class="button" type="submit">Выйти</button></li>
                     <li><a href="compare.html">
                         <img src="img/compare.svg" width="10" height="10">Сравнить</a></li>
                     <li><a href="basket.html">
@@ -40,21 +41,77 @@
                     <li><a href="guarantee.html">Гарантия<a></li>
                     <li><a href="contacts.html">Контакты<a></li>
                 </ul>     
+
+            <section class="modal modal-catalog">
+                <h2 class="visually-hidden">Разернутый каталог</h2>
+                    <ul>
+                        <li><a href="#">Виртуальная реальность</a></li>
+                        <li><a href="#">Фитнес браслеты</a></li>
+                        <li><a href="#">Квадрокоптеры</a></li>
+                        <li><a href="catalog.html">Моноподы для селфи</a></li>
+                        <li><a href="#">Умные часы</a></li>
+                        <li><a href="#">Экшн-камеры</a></li>
+                    </ul>
+            </section>
+
     </nav>
 </header>
 
+<section class="filters">
+    <h2 class="visually-hidden">Фильтр товаров</h2>
+        <form class="filter-form" action="https://echo.htmlacademy.ru" method="POST">
+            <fieldset>
+                <legend>Цвет</legend>
+                    <ul>
+                        <li class="filter-option visually-hidden">
+                            <input type="checkbox" id ="black" name="black">
+                            <label for="black" name="black">Черный</label>
+                        </li>
+                        <li class="filter-option visually-hidden">
+                             <input type="checkbox" id ="white" name="white">
+                            <label for="white" name="white">Белый</label>
+                        </li>
+                        <li class="filter-option visually-hidden">
+                            <input type="checkbox" id ="blue" name="blue">
+                            <label for="blue" name="blue">Синий</label>
+                        </li>
+                        <li class="filter-option visually-hidden">
+                            <input type="checkbox" id ="red" name="red">
+                            <label for="red" name="red">Красный</label>
+                        </li>
+                        <li class="filter-option visually-hidden">
+                            <input type="checkbox" id ="pink" name="pink">
+                            <label for="pink" name="pink">Розовый</label>
+                        </li>
+                    </ul>
+            </fieldset>
+            <fieldset>
+                <legend>Bluetooth</legend>
+                    <ul>
+                        <li class="filter-option visually-hidden">
+                            <input type="radio" id ="there-is" name="bluetooth">
+                            <label for="there-is" name="there-is">Есть</label>
+                        </li>
+                        <li class="filter-option visually-hidden">
+                            <input type="radio" id ="no" name="bluetooth">
+                            <label for="no" name="no">Нет</label>
+                        </li>
+                    </ul>
+            </fieldset>
+            <button class="button" type="submit">Показать</button>
+        </form>
+
+</section>
 
 <main class="container">
     <h1 class="page-title">Моноподы для селфи</h1>
 
     <ul class="main-list">
-        <li><a href="main.html">Главная</a></li>
+        <li><a href="index.html">Главная</a></li>
         <li><a href="catalog.html">Каталог товаров</a></li>
         <li><a href="Item.html">Моноподы для селфи</a></li>
     </ul>
-   <!--фильтр-->
-    
-    
+
 <section class="catalog">
      <ul class="catalog-list">
         <h2>Список моноподов для селфи</h2>
@@ -75,7 +132,7 @@
             <h3>Профессиональная селфи-палка</h3>    
             
             <p class="catalog-item-image">
-                    <img src="src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
+                    <img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
             </p>
             
             <p class="catalog-item-price">
@@ -112,14 +169,15 @@
 </main>
 
 <footer class="footer-main">
-  <a href="main-logo">
+  <a href="catalog.html">
     <img src="img/logo-footer.svg" width="164" height="36" alt="Логотип компании Device">
   </a>
   <div class="footer-user-navigation">
     <ul>
       <li><a href="personal-area.html">
           <img src="img/user.svg" width="13" height="12">Валентин Петухов</a></li>
-      <li class="user-exit"><a href="Exit.html">Выйти</a></li>
+      <li class="user-exit">
+          <button class="button" type="submit">Выйти</button></li>
       <li><a href="compare.html">
           <img src="img/compare.svg" width="10" height="10">Сравнить</a></li>
       <li><a href="basket.html">
@@ -127,33 +185,40 @@
     </ul>  
   </div>
   
-  <p class="footer-contacts">
-    г. Москва, ул. Строителей, 15
-  </p>
+    <p class="footer-contacts">
+        г. Москва, ул. Строителей, 15
+    </p>
   
-  <div class="footer-navigation">
-    <ul class="footer-navigation">
-      <li><a href="">Доставка</a></li>
-      <li><a href="">Гарантия</a></li>
-      <li><a href="">Контакты</a></li>
-    </ul>
-  </div>
-  <p class="footer-contacts">
-    Тел: +7(495)495-95-95
-  </p>
-  
-  <div class="footer-footer">
-      <img src="emblem.html" width="150" height="20">
-    <div class="footer-social">
-        <ul>
-            <li><a class="button" href="#"><img src="img/fb.svg" width="35" height="35">Фэйсбук</a></li>
-            <li><a class="button" href="#"><img src="img/instagram.svg" width="35" heigth="35"> Инстаграмм</a></a></li>
-            <li><a class="button" href="#"><img src="img/twitter.svg" width="35" height="35">Твиттер</a></li>
-          </ul>
-      <img src="img/logo-html.svg" width="150" height="20">
+    <div class="footer-navigation">
+        <ul class="footer-navigation">
+        <li><a   href="">Доставка</a></li>
+        <li><a href="">Гарантия</a></li>
+        <li><a href="">Контакты</a></li>
+        </ul>
     </div>
-  </div>
+    <p class="footer-contacts">
+        Тел: +7(495)495-95-95
+    </p>
+
+    <div class="footer-social">
+        <h3 class="visually-hidden">Мы в социальных сетях</h3>
+        <ul>
+            <li><a class="button" href="https://www.facebook.com"><img src="img/fb.svg" width="35" height="35">Фэйсбук</a></li>
+            <li><a class="button" href="http://www.instagram.com"><img src="img/instagram.svg" width="35" heigth="35"> Инстаграмм</a></a></li>
+            <li><a class="button" href="https://www.twitter.com"><img src="img/twitter.svg" width="35" height="35">Твиттер</a></li>
+          </ul>
+    <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-html.svg" width="150" height="20"></a>
+    </div>
 </footer>
+
+<section class="modal modal-basket-compare">
+    <p><h3 class="visually-hidden">Добавить в корзину</h3>
+        <button class="modal-basket" type="submit">В корзину</button>
+    </p>
+    <p><h3 class="visually-hidden">Сравнить товар</h3>
+        <button class="modal-compare" type="submit">Добавить к сравнению</button>
+    </p>
+</section>
 </body>
 </html>
 
