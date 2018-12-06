@@ -1,0 +1,423 @@
+@font-face {
+    font-family: 'Gilroy-ExtraBold';
+    src: url('../fonts/web/gilroyextrabold.woff2') format('woff2'),
+         url('../fonts/web/gilroyextrabold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: 'GilroyLight';
+    src: url('../fonts/web/gilroylight.woff2') format('woff2'),
+         url('../fonts/web/gilroylight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url('../fonts/web/opensans.woff2') format('woff2'),
+         url('../fonts/web/opensans.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: 'OpenSans-Light';
+    src: url('../fonts/web/opensanslight.woff2') format('woff2'),
+         url('../fonts/web/opensanslight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+body {
+
+  margin: 0;
+  padding: 0;
+  
+  font-family: "OpenSans-Light", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 30px;
+  letter-spacing: 0.15px;
+  text-align: left;
+  color:#000000;
+    
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.botton-design {
+  font-family: "Gilroy-ExtraBold", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  font-style: normal;
+  line-height: 24px;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+  vertical-align: middle;
+  text-align: center;
+  color: #000000;
+  border: none;
+
+  background-color: #f0c52e;
+}
+
+
+.main-navigation {
+  margin-left: 140px;
+  margin-top: 40px;
+  margin-right: 140px;
+
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 30px;
+  color: #000000;
+
+  background-color: #f7e296;
+}
+
+.logo {
+  position: absolute;
+  margin-left: 60px;
+  margin-top: -14px;
+}
+
+.site-search {
+  padding-top: 53px;
+}
+
+.site-navigation {
+  font-family: "Gilroy-ExtraBold", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 24px;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.site-navigation,
+.user-navigation {
+  list-style: none;
+}
+
+.site-navigation a,
+.user-navigation a {
+  color: #000000;
+}
+
+.reaction a:hover,
+.reaction a:focus {
+  opacity: 0.6;
+}
+
+.reaction a:active {
+  opacity: 0.3;
+}
+
+.modal {
+  display: none;
+}
+
+
+
+.container h2 {
+  font-family: "Gilroy-ExtraBold", "Arial", sans-serif;
+  font-size: 47,5px;
+  font-weight: 800;
+  line-height: 47,5px;
+  letter-spacing: 0,48px;
+  text-align: left;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+
+.text-company {
+  font-family: "OpenSans-Light", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 40px;
+  letter-spacing: normal;
+  text-align: left;
+  list-style: none;
+  color: #464646;
+
+  background-color: #ffffff;
+}
+
+
+.transpoting-company {
+  font-family: "Gilroy-ExtraBold", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 40px;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.footer-main {
+  color: #ffffff;
+  background-color: #464646;
+}
+
+.footer-user-navigation,
+.footer-navigation,
+.social {
+  list-style: none;
+}
+
+
+.footer-user-navigation {
+  font-family: "OpenSans-Light", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 30px;
+  letter-spacing: normal;
+  text-align: left;
+}
+
+
+.footer-contacts {
+  font-family: "OpenSans-Light", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 30px;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+}
+
+
+
+.footer-navigation {
+  font-family: "Gilroy-ExtraBold", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  font-style: normal;
+  line-height: 24px;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+  text-align: center;
+  list-style: none;
+
+  color: #ffffff;
+}
+
+
+.footer-social {
+  text-align: center;
+  color: #7e7e7e;
+}
+
+.logo-academy {
+  text-align: right;
+}
+
+
+
+.footer-navigation a {
+  color: #ffffff;
+}
+
+.footer-user-navigation a {
+  color: #ffffff;
+  opacity: 0.7;
+}
+
+.footer-user-navigation a:hover,
+.footer-user-navigation a:focus {
+  opacity: 1.0;
+}
+
+.footer-user-navigation a:active {
+  opacity: 0.3;
+}  
+
+
+
+.social a {
+  color: #ffffff;
+  opacity: 0.3;
+}
+
+.social a:hover,
+.social a:focus {
+  opacity: 0.6;
+}
+
+
+.social a:active {
+  opacity: 0.1;
+}
+
+
+
+
+
+/* catalog */
+
+.filters {
+
+  background-image: url("img/filter-background-list.jpg");
+  position: 0 0; 
+  background-repeat: repeat;
+}
+
+.page-title {
+  font-family: "Gilroy-ExtraBold", Arial, sans-serif;
+  font-size: 47px;
+  font-weight: 800;
+  font-style: normal;
+  line-height: 48px;
+  letter-spacing: 0.47px;
+  text-align: left;
+  color: #000000;
+
+}
+
+.main-list,
+.catalog,
+.catalog-list,
+.filter-option {
+  list-style: none;
+}
+
+.catalog a {
+  color: #000000;
+}
+
+.main-list a {
+  font-family: "OpenSans-Light", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 24px;
+  letter-spacing: 0.14px;
+  text-align: left;
+  color: #000000;
+  opacity: 0.3;
+}
+
+.main-list a:hover,
+.main-list a:focus {
+  opacity: 0.6;
+}
+
+.main-list a:active {
+  opacity: 0.1;
+}
+
+
+
+
+
+
+.checkbox {
+	display: none;
+}
+
+.checkbox-img {
+  position: relative;      
+  width: 27px;             
+  height: 23px;            
+  background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+}
+
+.checkbox-img,
+.label {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.checkbox:checked + .checkbox-img::before {
+	content: "";             
+	display: block;			 
+	position: absolute;      
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+  left: 0px;
+ 
+  background-image: url("../img/checkbox-on.svg");
+  background-repeat: no-repeat;
+}
+
+
+
+
+.checkbox,
+.radio {
+	display: none;
+}
+.checkbox-off,
+.radio-custom {
+	width: 25px;
+	height: 25px;
+  position: relative;
+  background-image: url("../img/radio-off.svg");
+}
+.checkbox-custom,
+.radio-custom,
+.label {
+	display: inline-block;
+	vertical-align: middle;
+}
+.checkbox:checked + .checkbox-custom::before,
+.radio:checked + .radio-custom::before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+  background-image: url("../img/radio-on.svg");
+}
+
+
+
+.checkbox-img:hover,
+.radio-custom:hover,
+.checkbox-img:focus,
+.radio-custom:focus  {
+  opacity: 0.6;
+}
+
+
+b {
+  font-family: "Gilroy-ExtraBold", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  font-style: normal;
+  line-height: 24px;
+  letter-spacing: 0.18px;
+  text-align: left;
+  color: #000000;
+}
+
+.money {
+  font-family: "GilroyLight", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 24px;
+  letter-spacing: 0.16px;
+  text-align: right;
+  color: #464646;
+}
+
+
+
